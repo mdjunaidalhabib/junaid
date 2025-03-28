@@ -1,5 +1,4 @@
 "use client";
-import ScrollEffect from "./ScrollAnimation";
 
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
@@ -83,7 +82,6 @@ const ProjectsSection = () => {
 
   return (
     <div>
-      <ScrollEffect effect="left">
         <section id="projects">
           <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
             My Projects
@@ -126,7 +124,6 @@ const ProjectsSection = () => {
             ))}
           </ul>
         </section>
-      </ScrollEffect>
     </div>
   );
 };
