@@ -1,8 +1,5 @@
 "use client";
-import ScrollAnimation from "./ScrollAnimation"; 
-
-
-
+//import ScrollAnimation from "./ScrollAnimation"; 
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
@@ -61,11 +58,13 @@ const AboutSection = () => {
       </h2>
 
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <ScrollAnimation direction="left">
-          <Image src="/images/about-image.png" width={500} height={500} />
-        </ScrollAnimation>
 
-        <ScrollAnimation direction="right">
+        {/* <ScrollAnimation direction="left"> */}
+
+          <Image src="/images/about-image.png" width={500} height={500} />
+
+          {/* <ScrollAnimation direction="right">*/}
+
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <p className="text-base lg:text-lg">
               I am a full stack web developer with a passion for creating
@@ -103,7 +102,7 @@ const AboutSection = () => {
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
           </div>
-        </ScrollAnimation>
+        {/* </ScrollAnimation> */}
       </div>
     </section>
   );
