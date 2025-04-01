@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+//import DarkModeToggleButton from "./DarkModeToggleButton";
 
 const navLinks = [
   {
@@ -36,6 +37,7 @@ const Navbar = () => {
         >
           LOGO
         </Link>
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
