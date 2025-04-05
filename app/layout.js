@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "./context/DarkModeProvider";
+import BackToTopButton from "./components/BackToTopButton";
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       >
         <DarkModeProvider>
           {children}
+          <BackToTopButton />
         </DarkModeProvider>
       </body>
     </html>
